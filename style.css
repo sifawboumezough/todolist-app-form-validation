@@ -1,0 +1,141 @@
+
+* {
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+    filter: drop-shadow(4px 4px 4px rgb(0, 0, 0,0.25));
+	/* overflow: hidden; */
+	width: 450px;
+}
+
+
+
+
+.form {
+    padding: 50px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position :relative;
+}
+
+.title {
+	/* border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px; */
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px  30px;
+    border-radius: 8px;
+    background-color: #5A38FD;
+    color: #FFFFFF;
+}
+
+.form-control label {
+    display: block;
+	margin-bottom: 5px;
+}
+
+ form .form-control input {
+    width: 100%;
+    border-radius: 8px;
+    height: 35px;
+    /* outline: none; */
+    border : 2px solid rgb(121, 121, 121 , 0.63);
+    padding: 0px 30px;
+}
+
+.form-control input:focus {
+    border: 2px solid #191919;
+    outline: 0;
+}
+
+.form-control.success input {  /*  if the field is not blank*/
+	border-color: #5A38FD;
+    outline: 0;
+}
+.input-icon {
+    width: 100%;
+    display: flex}
+
+
+
+.form-control.error input {
+	border-color: #e74c3c;
+    outline: 0;
+}
+
+
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    padding: 8px;
+}
+.form-control .user-icon {
+    visibility: visible;
+}
+.form-control .envolope-icon {
+    visibility: visible;
+}
+.form-control .lock-icon {
+    visibility: visible;
+}
+
+
+
+
+.form-control.success i.fa-check-circle {
+	color: green;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: red;
+	visibility: visible;
+    position: absolute;
+}
+
+.form-control small {
+	color: red;
+    font-size: 15px;
+	position: absolute;
+    bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 10px;
+    background-color: #5A38FD;
+    color: #FFFFFF;
+    font-size: 16px;
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0,0.25));
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
