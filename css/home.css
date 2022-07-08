@@ -1,0 +1,37 @@
+
+* {
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body {
+    width: 100%;
+	min-height: 100vh;
+	margin: 0;
+}
+
+header {
+    height: 60px;
+}
+
+
+.container {
+	background-color:#FFFFFF;
+	border-radius: 5px;
+    margin-top: 70px;
+    filter: drop-shadow(4px 4px 4px rgb(0, 0, 0,0.25));
+    width: 100%;
+    /* height: calc(100% - 120px); */
+    /* margin: 0 auto; */
+    padding: 40px 60px;
+}
+
+.container .right-content {
+    background-color: aliceblue;
+    width: 60%;
+}
+
+/* .todo-header {
+    background-color: red;
+    width: 100%;
+} */

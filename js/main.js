@@ -12,6 +12,12 @@ const creds = [
 
 	},
 ]
+const button = document.getElementById("button");
+button.addEventListener('click', (e) => {
+	e.preventDefault();
+	checkInputs();
+	loginFunction();
+});
 
 
 
@@ -20,15 +26,8 @@ function loginFunction () {
 	let email = document.getElementById("email").value;
 	let password = document.getElementById("password").value;
 let currentUser = creds.filter( credit=> credit.username == username && credit.password == password && credit.email == email)
-currentUser.length ? window.location.href ="home.html": console.log('Wrong data');
+currentUser.length ? window.location.href="home.html" + "?" + "username=" + username : console.log('Wrong data');
 }
-
-const button = document.getElementById("button");
-button.addEventListener('click', (e) => {
-	e.preventDefault();
-	checkInputs();
-	loginFunction();
-});
 
 
 const form = document.getElementById('form');
@@ -45,11 +44,7 @@ function checkInputs() {
 	
 	if(Username === '') {
 		setErrorFor(username, 'Username cannot be blank !');
-	}
-	// else if (!(whiteSpace(Username))) {
-		// 	setErrorFor (username, 'AZFAZFAZFAZFA');
-		// }
-		else {
+	}else {
 			setSuccessFor(username);
 		}
 		
@@ -91,9 +86,10 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-function whiteSpace(username){
-    return  username.match(/^\s+$/) !== null;
-}
+
+
+
+
 
 
 
