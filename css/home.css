@@ -27,7 +27,7 @@ header {
 }
 
 .container .right-content {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     width: 60%;
 }
 
@@ -76,6 +76,72 @@ header {
 .todo-container .todo-header .button-div button:hover {
     opacity: 0.8;
 }
+
+.todo-list-item {
+    padding-top: 30px;
+}
+.tasks {
+    width: 100%;
+}
+
+.tasks .item {
+    width: 100%;
+    border-bottom: 1px solid black;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+.item p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.item-btn {
+    height: 50px;
+    background-color: aliceblue;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.item-btn:hover {
+    background-color: red;
+}
+
+.item-btn i {
+    font-size: 20px;
+}
+
+
+
+
+
+  /* .tasks .task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  .tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .tasks .task:hover {
+    background-color: #f7f7f7;
+  }
+  .tasks .task.done {
+    opacity: 0.5;
+  } */
 
 
 
